@@ -1,7 +1,8 @@
 .custom-footer {
   display: flex;
+  float:left;
   flex-wrap: wrap;
-  background: $primary;
+  background: var(--header_background);;
   .flexbox {
     width: 100%;
     display: flex;
@@ -10,20 +11,25 @@
     padding: 2em 0 1em 0;
   }
   .first-box {
+    display:none;
     max-width: 20%;
     .heading {
       font-size: $font-up-2;
-      font-weight: bold;
+      font-weight: normal;
       margin-bottom: 0.5em;
       display: block;
     }
     .blurb {
-      color: $secondary-high;
+    //   color: $secondary-high;
+    color: $secondary;
     }
   }
   .second-box {
     flex: 1;
     .links {
+        .list{
+        }
+    float:left;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -63,7 +69,9 @@
       }
     }
     .small-link {
-      color: $secondary-high;
+    //   color: $secondary-high;
+    color: $secondary;
+
       margin: 0 0.25em;
       font-size: $font-down-2;
     }
@@ -72,10 +80,15 @@
     flex: 1;
   }
   .list span {
-    font-weight: bold;
+     //list titles
+    font-size: 15px;
+    font-weight: normal;
   }
   .footer-section-link-wrapper a {
-    color: $secondary-high;
+    // color: $secondary-high;
+    color: $secondary;
+    font-size: 12px;
+
   }
   .list {
     margin: 1em;
